@@ -57,15 +57,7 @@ module.exports = {
         }
       )
       .setThumbnail(botUser.avatarURL({ dynamic: true, format: 'png', size: 1024 }))
-      .setImage(`https://cdn.discordapp.com/attachments/1170652474563117138/1224660177039396876/MULTI_MUSIC_v1.5.png?ex=661e4cab&is=660bd7ab&hm=f7a542462fabaf9c1530ece5aa72597cff3ac032876bba46df5ddba7e122ea99&`);
-
-    const button2 = new ButtonBuilder()
-      .setLabel('Discord')
-      .setURL('https://discord.gg/greenmc')
-      .setStyle(ButtonStyle.Link);
-      
-    const row = new ActionRowBuilder()
-      .addComponents(button1);
+      .setImage(`https://images-ext-1.discordapp.net/external/eQEE18HKI2KoXq0shfCm12usFB_cMS7YVrtQbbyGblA/%3Fsize%3D2048/https/cdn.discordapp.com/icons/1118859248886091848/a_9bcc3af0808618ff3d0e3643f0202dde.gif?width=215&height=215`);
     
     message.reply({ embeds: [embed], components: [row] });
   },
